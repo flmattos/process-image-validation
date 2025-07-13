@@ -88,7 +88,7 @@ Executes a branching pipeline, where both the OCR and License Plate Detection fi
 Test video specifically designed for the OCR filter. Contains multiple frames with stylized "Hello World" text, ideal for evaluating text detection capabilities.
 - **example_video.mp4**
 Generic video used for running the branching pipeline. It contains both readable text and a visible license plate, enabling simultaneous validation of OCR and object detection filters.
-> *"hello.mov"* and *"example_video.mp4"* these assets are excluded from version control via *.gitignore* to avoid repository bloat and maintain performance. Large binary files (e.g., .mov, .mp4) are not suitable for Git tracking due to storage inefficiencies and lack of delta compression.
+> *"hello.mov"* and *"example_video.mp4"* these assets are excluded from version control via *.gitignore* to avoid repository bloat and maintain performance. Large binary files (e.g., .mov, .mp4) are not suitable for Git standard.
 
 ## Resume
 In alignment with the original technical proposal, this repository satisfies the required implementation and validation scope through the following components:
