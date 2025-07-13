@@ -1,8 +1,6 @@
 import subprocess
 import os
 import json
-import pytest
-import unittest
 
 VIDEO_PATH = "utils/hello.mov"
 OUTPUT_PATH = "output/subject_data.json"

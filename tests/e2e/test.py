@@ -1,14 +1,14 @@
 import subprocess
 import os
 import json
-from pathlib import Path
 
 VIDEO_PATH = "utils/hello.mov"
 OUTPUT_PATH = "output/subject_data.json"
 SCRIPT_PATH = "utils/ocr_video.py"
 SCRIPT_PATH_FAILURE = "utils/ocr_video_failure.py"
 SCRIPT_BRANCHING_PATH = "utils/branching_pipeline.py"
-
+OUTPUT_BRANCHING_OCR = "output_ocr/ocr.json"
+OUTPUT_BRANCHING_PLATE = "output_plate/plate.json"
 
 def run_pipeline():
     result = subprocess.Popen(['python', SCRIPT_PATH])
@@ -51,3 +51,5 @@ def run_branching_pipeline():
 def test_branching_pipeline():
     result = run_branching_pipeline()  
     assert result.returncode == 0
+    assert os.path.exists(OUTPUT_BRANCHING_OCR), "OCR output JSON was not created."
+    assert os.path.exists(OUTPUT_BRANCHING_PLATE), "License Plate output JSON was not created."

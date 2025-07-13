@@ -6,7 +6,7 @@ from openfilter.filter_runtime.filter import Filter
 if __name__ == '__main__':
     Filter.run_multi([
         (VideoIn, dict(
-            sources='file://utils/hello.mov!no-loop',
+            sources='file://utils/hello.mp4!no-loop',
             outputs='tcp://*:5550',
             outputs_metrics='tcp://*:6550',    
             log=True,        
