@@ -1,0 +1,50 @@
+__pycache__
+utils/*.mp4
+utils/*.mov
+output/
+output_*/
+logs/
+model.*
+# Environments
+.env
+.venv
+env/
+venv/
+venv_*/
+ENV/
+env.bak/
+venv.bak/
+open-filter/
+# Visual Studio Code droppings
+.vscode
+# mypy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+# Pyre type checker
+.pyre/
+# Filter specific stuff
+telemetry/
+cache/
+Reports/
+_authors.txt
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
